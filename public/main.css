@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lobster&family=Press+Start+2P&display=swap');
+
+
+:root {
+    --nippon-paint: rgb(0,0,0);
+    --primary-black: #0d1b2aff;
+    --secondary: #1b263bff;
+    --bdazzled-blue: #415a77ff;
+    --shadow-blue: #778da9ff;
+    --text-plat: #e0e1ddff;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-black);
+    z-index: -5;
+}

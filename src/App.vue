@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Navbar />
+  <Hero />
+  <Cast />
+  <Ticket />
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/NavbarComp.vue'
+import Hero from './components/HeroSection.vue'
+import Cast from './components/CastSection.vue'
+import Ticket from './components/TicketSection.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    Navbar,
+    Hero,
+    Cast,
+    Ticket
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
