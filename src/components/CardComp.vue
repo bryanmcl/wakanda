@@ -1,5 +1,5 @@
 <template>
-    <div class="card" :style="{'z-index': '1'}">
+    <div class="card">
         <img :src= "require(`../assets/casts/${cast.img}`)" alt="">
         <div class="name">{{cast.name}}</div>
         <div class="role">{{cast.role}}</div>
@@ -22,12 +22,12 @@ export default {
 .card {
     position: relative;
     display: flex;
-    flex-grow: 0;
     flex-direction: column;
     justify-content: flex-end;
-    min-width: 300px;
+    min-width: 200px;
     width: 20vw;
-    height: 400px;
+    aspect-ratio: 3/4;
+    z-index: 1;
 
     /* background: var(--secondary); */
     color: var(--text-plat);
@@ -49,13 +49,13 @@ export default {
 }
 
 .name {
-    font-size: 2rem;
+    font-size: clamp(1rem, 2.5vw ,2rem);
     margin-left: 20px;
     text-shadow: 1px 1px 3px rgb(55, 55, 55);
 }
 
 .role  {
-    font-size: 1rem;
+    font-size: clamp(0.5rem, 1.5vw ,1rem);
     margin-left: 20px;
     margin-bottom: 1rem;
     text-shadow: 1px 1px 3px rgb(55, 55, 55);
@@ -64,6 +64,21 @@ export default {
 .card:hover img{
     transform: scale(1.25) rotateZ(10deg);
     filter: grayscale(100%) brightness(0.8);
+}
+
+@media screen and (max-width: 800px){
+    .card {
+        width: 50vw;
+    }
+
+    .name {
+        font-size: clamp(1rem, 4vw ,4rem);
+    }
+
+    .role  {
+        font-size: clamp(1rem, 2.5vw ,2rem);
+    }
+
 }
     
 </style>

@@ -32,10 +32,12 @@ export default {
     .wrapper > span {
         text-transform: uppercase;
         font-weight: bold;
+        text-align: center;
         color: var(--text-plat);
         font-family: 'Inter', sans-serif;
         letter-spacing: 2px;
-        font-size: 5rem;
+        /* font-size: 5rem; */
+        font-size: clamp(2rem ,5vw, 5rem);
     }
 
     .bg {
@@ -57,7 +59,7 @@ export default {
         transform: translateY(-50%); */
 
         aspect-ratio: 16/9;
-        min-width: 30rem;
+        min-width: 15rem;
         width: 50vw;
     }
 

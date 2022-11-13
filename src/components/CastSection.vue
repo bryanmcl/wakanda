@@ -31,7 +31,7 @@ export default {
 <style scoped>
     .wrapper {
         margin: 15px 30px;
-        height: 500px;
+        height: clamp(350px, 40vw, 600px);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -62,11 +62,11 @@ export default {
         transform: translateY(-1rem);
     }
     .card:not(:first-child){
-        margin-left: -100px;
+        margin-left: -10vw;
     }
 
     .card:hover ~.card {
-       transform: translateX(100px);
+       transform: translateX(10vw);
       
     }
 
@@ -77,5 +77,29 @@ export default {
     ::-webkit-scrollbar-thumb {
         background: var(--text-plat);
         border-radius: 10px;
+    }
+
+    @media screen and (max-width: 800px){
+        .wrapper {
+            flex-direction: column;
+            height: fit-content!important;
+        }
+
+        .card {
+        transition: all 0.5s ease;
+        }
+
+
+        .card:hover {
+            transform: none;
+        }
+        .card:not(:first-child){
+            margin-left: 0;
+        }
+
+        .card:hover ~.card {
+            transform: none;
+        
+        }
     }
 </style>
