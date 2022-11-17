@@ -1,5 +1,5 @@
 <template>
-    <h2>Cast Members</h2>
+    <h2 id="cast">Cast Members</h2>
     <div class="wrapper">
 
         <CardComp class="card" v-for="(cast, index) in casts" :key = 'index' :cast = 'cast' />

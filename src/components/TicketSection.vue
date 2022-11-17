@@ -1,5 +1,5 @@
 <template >
-    <div class="wrapper">
+    <div id="ticket" class="wrapper">
     <h2>Get your tickets at your nearby cinemas !</h2>
     
         <div class="cinema-wrapper">
@@ -107,11 +107,6 @@ export default {
             flex-direction: column;
             list-style: none;
         }
-
-        li {
-            /* animation: none; */
-        }
-    
     
     }
       

@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div id="hero" class="wrapper">
         <div class="bg"></div>
         <span>Black Panther</span>
         <iframe class="video" src="https://www.youtube.com/embed/_Z3QKkl1WyM?controls=0&loop=1&autoplay=1&mute=1&rel=0&playlist=_Z3QKkl1WyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; loop" allowfullscreen></iframe>
